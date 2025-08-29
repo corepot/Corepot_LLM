@@ -1,0 +1,16 @@
+torch==2.0.1
+torchvision==0.15.2
+fastapi==0.95.1
+uvicorn[standard]==0.22.0
+pillow==9.5.0
+numpy==1.23.5
+scikit-learn==1.2.2
+matplotlib==3.7.1
+tensorboard==2.12.3
+python-multipart==0.0.6
+
+
+
+
+
+

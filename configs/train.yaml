@@ -1,0 +1,24 @@
+seed: 42
+epochs: 30
+batch_size: 32
+learning_rate: 0.001
+early_stopping_patience: 5
+
+model:
+  name: resnet18
+  pretrained: true
+  num_classes: 10
+
+data:
+  train_dir: data/train
+  val_dir: data/val
+  image_size: 224
+
+save_path: models/best_model.pth
+log_dir: logs/runs
+
+
+
+
+
+

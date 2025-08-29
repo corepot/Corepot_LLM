@@ -1,0 +1,37 @@
+services:
+  trainer:
+    image: corepot:latest
+    container_name: corepot-trainer
+    command: train
+    volumes:
+      - /root/corepot/data:/app/data
+      - /root/corepot/models:/app/models
+      - /root/corepot/logs:/app/logs
+    env_file:
+      - /root/corepot/.env
+    restart: "no"
+
+  inference:
+    image: corepot:latest
+    container_name: corepot-inference
+    command: serve
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    volumes:
+      - /root/corepot/models:/app/models
+    env_file:
+      - .env
+    restart: unless-stopped
+
+
+
+
+
+
+
+
+
+
+
+
+

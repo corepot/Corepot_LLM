@@ -97,6 +97,6 @@ docker run --rm -p 8000:8000 corepot:latest serve
 欢迎提交 Issues 和 Pull Requests，一起完善 Corepot！
 
 许可证
-MIT License
+GPL-2.0 License
 
 

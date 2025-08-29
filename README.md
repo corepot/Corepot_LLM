@@ -63,9 +63,9 @@ bash scripts/serve.sh
 或：
 python -m app.entrypoint serve
 访问接口：
-
 POST /predict
 上传图片，返回分类结果。
+
 4. 模型剪枝
 
 python -m app.prune
@@ -97,6 +97,6 @@ docker run --rm -p 8000:8000 corepot:latest serve
 欢迎提交 Issues 和 Pull Requests，一起完善 Corepot！
 
 许可证
-MIT License
+GPL-2.0 License
 
 

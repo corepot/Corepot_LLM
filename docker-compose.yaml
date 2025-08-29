@@ -4,9 +4,9 @@ services:
     container_name: corepot-trainer
     command: train
     volumes:
-      - .data:/app/data
-      - .models:/app/models
-      - .logs:/app/logs
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
     env_file:
       - .env
     restart: "no"
@@ -18,7 +18,7 @@ services:
     ports:
       - "${PORT:-8000}:${PORT:-8000}"
     volumes:
-      - .models:/app/models
+      - ./models:/app/models
     env_file:
       - .env
     restart: unless-stopped
